@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <title>craigslist - account log in</title>
+        <link type="text/css" rel="stylesheet" media="all" href="//www.craigslist.org/styles/cl.css?v=5826de27c327d61d2169c6a45af814f9">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        
+                <script>
+                try {
+                    if (
+                        !/\/\/.+\.craigslist\.org\/about\//.test(window.location.href)
+                        &&
+                        (!window.addEventListener || JSON.parse(JSON.stringify('x')) !== 'x')
+                    ) {
+                        throw "unsupported browser";
+                    }
+                } catch (e) {
+                    function cleanup() {
+                        document.body.innerHTML = '<div id="cl-unsupported-browser" style="margin:1em;font-size:150%;text-align:center;">We have detected you are using a browser that is missing critical features.<br><br>Please visit craigslist from a modern browser.</div>';
+                        document.body.style = "display:block";
+                    }
+
+                    try {
+                        document.body.style = "display:none";
+                    } catch (e) {
+                    }
+                    window.onload = cleanup;
+                    window.clUnsupportedBrowser = true;
+                }
+                </script>
+            <script src="//www.craigslist.org/js/general-concat.min.js?v=22999a92e21a6f61f2a0787425b82bca" type="text/javascript" ></script>
+
+    </head>
+
+    <body>
+        <script type="text/javascript"><!--
+    function C(k){return(document.cookie.match('(^|; )'+k+'=([^;]*)')||0)[2]}
+    var pagetype, pagemode;
+    (function(){
+        var h = document.documentElement;
+        h.className = h.className.replace('no-js', 'js');
+        var b = document.body;
+        var bodyClassList = b.className.split(/\s+/);;
+        pagetype = bodyClassList[0]; // dangerous assumption
+        var fmt = C('cl_fmt');
+        if ( fmt === 'regular' || fmt === 'mobile' ) {
+            pagemode = fmt;
+        } else if (screen.width <= 480) {
+            pagemode = 'mobile';
+        } else {
+            pagemode = 'regular';
+        }
+        pagemode = pagemode === 'mobile' ? 'mobile' : 'desktop';
+        bodyClassList.push(pagemode);
+        if (C('hidesearch') === '1' && pagemode !== 'mobile') {
+            bodyClassList.push('hide-search');
+        }
+        var width = window.innerWidth || document.documentElement.clientWidth;
+        if (width > 1000) { bodyClassList.push('w1024'); }
+        if (typeof window.sectionBase !== 'undefined') {
+            var mode = (decodeURIComponent(C('cl_tocmode') || '').match(new RegExp(window.sectionBase + ':([^,]+)', 'i')) || {})[1] || window.defaultView;
+            if (mode) {
+                bodyClassList.push(mode);
+            }
+        }
+        b.className = bodyClassList.join(' ');
+    }());
+--></script>
+
+
+        <section class="page-container">
+<div class="tryapp">
+    try the craigslist app &raquo;
+    <a class="appstorebtn"
+    href="https://play.google.com/store/apps/details?id=org.craigslist.CraigslistMobile">
+        Android
+    </a>
+    <a class="appstorebtn"
+    href="https://apps.apple.com/us/app/craigslist/id1336642410">
+        iOS
+    </a>
+</div>
+<header class="global-header">
+   <a class="header-logo" name="logoLink" href="https://www.craigslist.org">CL</a>
+
+    <nav class="breadcrumbs-container">
+
+<ul class="breadcrumbs">
+
+
+
+
+        <li class="crumb plain-message">
+            <p>
+account log in            </p>
+        </li>
+</ul>
+    </nav>
+
+
+</header>
+
+
+<section class="body">
+    <div class="login-page-boxes">
+        <div class="accountform login-box">
+            <h1 class="accountform-banner">Log in</h1>
+            <form action="https://accounts.craigslist.org/login" method="POST" class="loginform">
+                <input type="hidden" name="step" value="confirmation">
+                <input type="hidden" name="rt" value="">
+                <input type="hidden" name="rp" value="">
+                <input type="hidden" name="t" value="1598981769">
+                <input type="hidden" name="p" value="0">
+
+
+
+
+
+
+
+                    <div class="alert alert-sm alert-error" role="alert">
+                        <p>Further verification required.<br>Try again or <button type="submit" class="submit-onetime-link-button" formmethod="post" formaction="https://accounts.craigslist.org/login/onetime">click here</button> to receive a one-time login link.</p>
+                    </div>
+
+
+                <div class="accountform-field">
+                    <label for="inputEmailHandle">Email / Handle</label>
+                    <input
+                        id="inputEmailHandle"
+                        name="inputEmailHandle"
+                        type="text"
+                        value="me3dun@gmail.com"
+                        autofocus
+                        required
+                    >
+                </div>
+                <div class="accountform-field">
+                    <label for="inputPassword">Password<a href="https://accounts.craigslist.org/reset" class="accountform-helplink-tiny" tabindex="-1">Forgot password?</a></label>
+                    <input id="inputPassword" type="password" name="inputPassword">
+                </div>
+                <div class="accountform-actions">
+                    <button type="submit" id="onetime" class="loginlink-btn" formmethod="post" formaction="https://accounts.craigslist.org/login/onetime">E-mail a login link</button>
+                    <button type="submit" id="login" class="accountform-btn">Log in</button>
+                </div>
+            </form>
+        </div>
+
+            <p class="box-conjunction">
+                or
+            </p>
+
+<div class="accountform login-page-box create-account-box">
+    <h1 class="accountform-banner">Create an account</h1>
+    <form action="https://accounts.craigslist.org/signup" method="POST">
+        <input type="hidden" name="rp" value="">
+        <input type="hidden" name="rt" value="">
+        <input type="hidden" name="t" value="1598981769">
+        <input type="hidden" name="whichForm" value="createAccount">
+        <div class="accountform-field">
+            <label for="emailAddress">Email</label>
+            <input
+                id="emailAddress"
+                maxlength="64"
+                name="emailAddress"
+                type="email"
+                value=""
+                required
+            >
+        </div>
+        <div class="accountform-actions">
+            <button type="submit" id="create" class="accountform-btn">Create account</button>
+            <a href="https://www.craigslist.org/about/help/user_accounts" class="accountform-helplink">Account help</a>
+        </div>
+    </form>
+</div>
+
+    </div>
+
+    <script src="//www.craigslist.org/js/onetime.min.js?v=eb000fc9b8568db322a5a2bfe19c6d57" type="text/javascript" ></script>
+
+
+</section>
+<footer>
+    <ul class="clfooter">
+        <li>&copy; 2020 <span class="desktop">craigslist</span><span class="mobile">CL</span></li>
+        <li><a href="https://www.craigslist.org/about/help/">help</a></li>
+        <li><a href="https://www.craigslist.org/about/scams">safety</a></li>
+        <li class="desktop"><a href="https://www.craigslist.org/about/privacy.policy">privacy</a><sup class="neu">new</sup></li>
+        <li class="desktop"><a href="https://forums.craigslist.org/?forumID=8">feedback</a></li>
+        <li><a href="https://www.craigslist.org/about/terms.of.use.en-us">terms</a></li>
+        <li><a href="https://www.craigslist.org/about/">about</a></li>
+        <li class="fsel desktop linklike" data-mode="mobile">mobile</li>
+        <li class="fsel mobile linklike" data-mode="regular">desktop</li>
+    </ul>
+</footer>
+        </section>
+
+        <script src="//www.craigslist.org/js/login.min.js?v=62a4b24512fb83803a42b82f787c2270" type="text/javascript" ></script>
+
+        </script>
+    </body>
+</html>
+
