@@ -13,16 +13,19 @@ const main = async () => {
             },
             headers: {
                 Referer: "https://accounts.craigslist.org/login",
-                UserAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36"
+                UserAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36",
             },
-            simple: false
+            simple: false,
+            followAllRedirects: true,
+            jar: true,
+
         });
 
         fs.writeFileSync('./login.html', html);
 
 
     }catch(err){
-        console.log(err);``
+        console.log(err);
     }
 }
 
